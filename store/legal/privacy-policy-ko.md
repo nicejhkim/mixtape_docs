@@ -1,0 +1,1 @@
+../../_includes/legal/privacy-policy-ko.md

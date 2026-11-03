@@ -1,0 +1,29 @@
+# Old Mix Tape 법적 문서 사이트 (GitHub Pages)
+# 공개 URL: https://nicejhkim.github.io/mixtape_docs/
+title: Old Mix Tape
+description: Privacy policy and legal documents for Old Mix Tape
+url: https://nicejhkim.github.io
+baseurl: /mixtape_docs
+
+markdown: kramdown
+permalink: pretty
+
+# 스토어 제출 자료는 사이트에 올리지 않는다. 방침 본문은 _includes/legal/.
+exclude:
+  - store
+  - README.md
+  - .gitignore
+
+
+
+defaults:
+  - scope:
+      path: "ko"
+    values:
+      lang: ko
+      layout: default
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: default

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% if page.lang and page.alt_path %}
+    <nav class="lang-switch" aria-label="Language">
+      {% if page.lang == 'ko' %}
+      <span aria-current="page">한국어</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="{{ page.alt_path | relative_url }}">English</a>
+      {% else %}
+      <a href="{{ page.alt_path | relative_url }}">한국어</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <span aria-current="page">English</span>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </header>
+
+  <main class="doc">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>{{ site.title }}</p>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# mixtape_docs
+# Old Mix Tape
 
 Old Mix Tape 스토어·법적 문서용 GitHub Pages 저장소.
 
