@@ -21,7 +21,7 @@ Hear the radio, then keep the moment on a cassette tape.
 An app for hearing internet radio and keeping the moment on a cassette tape.
 
 ■ Listening
-· The first launch includes radio stations. Add another with a name and a stream address.
+· Station details come from radio-browser.info. Search there, or add a name and stream address yourself.
 · Play the station you pick on a cassette player.
 · If the stream drops, the screen says so right away.
 
